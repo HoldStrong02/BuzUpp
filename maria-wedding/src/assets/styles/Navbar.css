@@ -1,0 +1,196 @@
+/* Основен стил за навигацията */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 20px; /* Намаляване на padding отгоре и отдолу */
+    height: 60px; /* Определена височина за навигацията */
+    background-color: #ffe6e6; /* Светло розов фон */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Уверяваме се, че ширината е 100%, за да няма изрязване */
+    margin: 0 auto; /* Премахване на излишно отстояние и центриране */
+}
+
+/* Лого */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff3366; /* Акцентен цвят */
+    text-decoration: none;
+}
+
+/* Линкове в навигацията */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center; /* Изравняване на елементите по вертикала */
+}
+
+.nav-links li a,
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ff3366; /* Акцентен цвят */
+    transition: color 0.3s ease;
+    padding: 10px; /* Увеличаване на padding за равномерност */
+}
+
+/* Active стил за активния линк */
+.nav-link-active {
+    font-weight: bold;
+    color: #ff6699; /* По-светъл акцентен цвят */
+    border-bottom: 2px solid #ff3366;
+}
+
+/* Hover ефект */
+.nav-links li a:hover {
+    color: #ff6699;
+}
+
+/* Хамбургер икона */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    position: relative;
+    right: 10%;
+    margin-left: auto; /* Придвижва иконата вдясно, за да не бъде скрита */
+    padding: 10px; /* Допълнителен padding за по-добър изглед */
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ff3366;
+    transition: all 0.3s ease;
+}
+
+/* Преход при отваряне на менюто */
+.menu-icon .bar.open:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon .bar.open:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon .bar.open:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Dropdown стилове */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .nav-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; /* Скриване на менюто по подразбиране */
+    flex-direction: column;
+    background-color: #fff5f8; /* Светло розов фон */
+    border: 1px solid #ff6699;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 200px; /* Ширина на dropdown менюто */
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ff3366;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ffe6e6;
+    color: #ff6699;
+}
+
+/* Активно меню */
+.dropdown-menu-active {
+    display: flex; /* Показване на менюто при клик */
+}
+
+/* Active стил за dropdown линкове */
+.dropdown-link-active {
+    font-weight: bold;
+    background-color: #e297b0;
+    color: #fff;
+}
+
+/* Мобилен изглед */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        background-color: #ffe6e6;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li a,.nav-link {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color: #ffe6e6;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .dropdown-menu li a {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}

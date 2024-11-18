@@ -1,0 +1,113 @@
+/* Стил за основната секция */
+.ceremony {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff5f8; /* Светло розов фон */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Заглавие на секцията */
+.ceremony h2 {
+    font-size: 2rem;
+    color: #ff3366; /* Акцентен цвят */
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6699;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.ceremony h3 {
+    font-size: 1.5rem;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Параграфи */
+.ceremony p {
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Списък със стил */
+.ceremony ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.ceremony ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    color: #555;
+}
+
+.ceremony ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ff3366; /* Акцентен цвят */
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Ексклузивен блок */
+.exclusive {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffe6ee; /* Светъл розов фон */
+    border-left: 5px solid #ff3366;
+    border-radius: 5px;
+}
+
+.exclusive h4 {
+    font-size: 1.4rem;
+    color: #ff3366;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.exclusive p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Граници между секциите */
+.ceremony p + ul,
+.ceremony ul + p {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+/* Мобилен изглед */
+@media (max-width: 768px) {
+    .ceremony {
+        padding: 15px;
+    }
+
+    .ceremony h2 {
+        font-size: 1.8rem;
+    }
+
+    .ceremony h3 {
+        font-size: 1.3rem;
+    }
+
+    .exclusive h4 {
+        font-size: 1.2rem;
+    }
+}

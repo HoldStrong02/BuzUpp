@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px; /* Максимална ширина */
+    margin: 0 auto; /* Центриране на контейнера */
+    padding: 0 20px; /* Малко вътрешно отстояние за по-добра видимост */
+}
+
+/* Контейнер за всички секции */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стил за всяка отделна секция, за да ги разделим визуално една от друга */
+.section {
+    background-color: #ffffff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Заглавия на секциите */
+.section h2 {
+    font-size: 2.5rem;
+    color: #ff3366; /* Акцентен цвят */
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6699;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Текст в секцията */
+.section p {
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Центриране на съдържанието */
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Благодарствено съобщение или важно подчертаване */
+.section .thank-you {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff3366;
+}
+
+/* Footer стилове */
+.footer {
+    background-color: #fff5f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ff6699;
+    margin-top: 40px;
+}
+
+/* Адаптивен дизайн за по-малки екрани */
+@media (max-width: 768px) {
+    .section {
+        padding: 20px 15px;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,54 @@
+/* Основен стил за Home секцията */
+.home-section {
+    background-color: #fff5f8; /* Светло розов фон */
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Контейнер за съдържание */
+.home-content {
+    text-align: center;
+}
+
+/* Заглавие на секцията */
+.home-section h2 {
+    font-size: 2.5rem;
+    color: #ff3366; /* Акцентен цвят */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6699;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 0; /* Премахване на излишното разстояние */
+}
+
+/* Параграфи в Home секцията */
+.home-section p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Благодарствено съобщение */
+.home-section .thank-you {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff3366; /* Акцентен цвят */
+}
+
+/* Мобилен изглед */
+@media (max-width: 768px) {
+    .home-section {
+        padding: 20px 15px;
+    }
+
+    .home-section h2 {
+        font-size: 2rem;
+    }
+
+    .home-section p {
+        font-size: 1rem;
+    }
+}

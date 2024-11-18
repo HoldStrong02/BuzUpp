@@ -1,0 +1,77 @@
+/* Основен стил за секцията */
+.wedding-event {
+    background-color: #fff5f8; /* Светло розов фон */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Заглавия */
+.wedding-event h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #ff3366; /* Акцентен цвят */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6699;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.wedding-event h3 {
+    font-size: 1.5rem;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Параграфи */
+.wedding-event p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Списък със стил */
+.wedding-event ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.wedding-event ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    color: #555;
+}
+
+.wedding-event ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ff3366; /* Акцентен цвят */
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Адаптивен дизайн */
+@media (max-width: 768px) {
+    .wedding-event {
+        padding: 20px 10px;
+    }
+
+    .wedding-event h2 {
+        font-size: 1.8rem;
+    }
+
+    .wedding-event h3 {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,95 @@
+/* Основен стил за контактната форма */
+.contact-form {
+    background-color: #fff5f8; /* Светло розов фон */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Заглавие на формата */
+.contact-form h2 {
+    font-size: 2rem;
+    color: #ff3366; /* Акцентен цвят */
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6699;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Стилове за формата */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Инпут полета */
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ff6699;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff3366; /* По-силен акцент */
+    box-shadow: 0 4px 6px rgba(255, 51, 102, 0.2);
+    outline: none;
+}
+
+/* Текстовото поле */
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Бутон за изпращане */
+.contact-form button {
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff6699;
+    transform: translateY(-2px); /* Леко издигане при hover */
+}
+
+/* Адаптивен дизайн за по-малки екрани */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
