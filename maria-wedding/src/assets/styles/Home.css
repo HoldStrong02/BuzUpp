@@ -7,11 +7,11 @@
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.8;
+    height: 60vh;
 }
 
 /* Контейнер за съдържание */
 .home-content {
-    text-align: center;
 }
 
 /* Заглавие на секцията */
@@ -42,6 +42,7 @@
 @media (max-width: 768px) {
     .home-section {
         padding: 20px 15px;
+        height: auto;
     }
 
     .home-section h2 {

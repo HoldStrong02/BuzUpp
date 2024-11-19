@@ -52,7 +52,7 @@
 /* Текстовото поле */
 .contact-form textarea {
     resize: none;
-    height: 120px;
+    height: 140px;
 }
 
 /* Бутон за изпращане */
@@ -72,6 +72,8 @@
     background-color: #ff6699;
     transform: translateY(-2px); /* Леко издигане при hover */
 }
+
+
 
 /* Адаптивен дизайн за по-малки екрани */
 @media (max-width: 768px) {
